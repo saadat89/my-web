@@ -6,11 +6,11 @@ media_folder: "public/uploads"
 public_folder: "/uploads"
 
 collections:
-  - name: "site_ar"
-    label: "الموقع (AR)"
+  - name: "content_ar"
+    label: "المحتوى (AR)"
     files:
       - file: "content/site-ar.json"
-        label: "محتوى عربي"
+        label: "Site AR"
         name: "site_ar"
         fields:
           - { label: "عنوان البطل", name: "heroTitle", widget: "string" }
@@ -22,8 +22,8 @@ collections:
               - { label: "العنوان", name: "title", widget: "string" }
               - { label: "الصورة", name: "image", widget: "image" }
 
-  - name: "site_en"
-    label: "Site (EN)"
+  - name: "content_en"
+    label: "Content (EN)"
     files:
       - file: "content/site-en.json"
         label: "Site EN"
