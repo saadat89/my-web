@@ -1,0 +1,39 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "content_ar"
+    label: "المحتوى (AR)"
+    files:
+      - file: "content/site-ar.json"
+        label: "Site AR"
+        name: "site_ar"
+        fields:
+          - { label: "عنوان البطل", name: "heroTitle", widget: "string" }
+          - { label: "وصف قصير", name: "heroSubtitle", widget: "string", required: false }
+          - label: "أعمال"
+            name: "portfolio"
+            widget: "list"
+            fields:
+              - { label: "العنوان", name: "title", widget: "string" }
+              - { label: "الصورة", name: "image", widget: "image" }
+
+  - name: "content_en"
+    label: "Content (EN)"
+    files:
+      - file: "content/site-en.json"
+        label: "Site EN"
+        name: "site_en"
+        fields:
+          - { label: "Hero title", name: "heroTitle", widget: "string" }
+          - { label: "Subtitle", name: "heroSubtitle", widget: "string", required: false }
+          - label: "Portfolio"
+            name: "portfolio"
+            widget: "list"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Image", name: "image", widget: "image" }
