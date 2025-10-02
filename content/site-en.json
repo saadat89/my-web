@@ -1,0 +1,14 @@
+{
+  "heroTitle": "Welcome to our site",
+  "heroSubtitle": "This text is editable from /admin",
+  "portfolio": [
+    {
+      "title": "Project 1",
+      "image": "/uploads/sample1.jpg"
+    },
+    {
+      "title": "Project 2",
+      "image": "/uploads/sample2.jpg"
+    }
+  ]
+}

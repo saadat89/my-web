@@ -1,0 +1,54 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+local_backend: true
+
+publish_mode: editorial_workflow
+
+collections:
+  - name: "site_ar"
+    label: "الموقع (AR)"
+    label_singular: "عنصر"
+    format: "json"
+    extension: "json"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "site-ar"
+        label: "محتوى الموقع - عربي"
+        file: "content/site-ar.json"
+        fields:
+          - {label: "عنوان البطل (Hero)", name: "heroTitle", widget: "string"}
+          - {label: "وصف قصير", name: "heroSubtitle", widget: "string", required: false}
+          - label: "قائمة المشاريع"
+            name: "portfolio"
+            widget: "list"
+            fields:
+              - {label: "العنوان", name: "title", widget: "string"}
+              - {label: "الصورة", name: "image", widget: "image"}
+
+  - name: "site_en"
+    label: "Site (EN)"
+    format: "json"
+    extension: "json"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "site-en"
+        label: "Site Content - English"
+        file: "content/site-en.json"
+        fields:
+          - {label: "Hero title", name: "heroTitle", widget: "string"}
+          - {label: "Subtitle", name: "heroSubtitle", widget: "string", required: false}
+          - label: "Portfolio"
+            name: "portfolio"
+            widget: "list"
+            fields:
+              - {label: "Title", name: "title", widget: "string"}
+              - {label: "Image", name: "image", widget: "image"}

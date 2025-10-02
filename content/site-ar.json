@@ -1,0 +1,14 @@
+{
+  "heroTitle": "أهلاً بك في موقعنا",
+  "heroSubtitle": "هذا النص قابل للتعديل من لوحة /admin",
+  "portfolio": [
+    {
+      "title": "مشروع 1",
+      "image": "/uploads/sample1.jpg"
+    },
+    {
+      "title": "مشروع 2",
+      "image": "/uploads/sample2.jpg"
+    }
+  ]
+}
